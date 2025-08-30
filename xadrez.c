@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int i; // Variável 
+    int i; // Variável loop
 
     // ..............................
-    // Definir passos 
+    // Definir variável passos 
     // ..............................
-    int bispo_passos = 5;   // Movimentos do Bispo
-    int torre_passos = 5;   // Movimentos da Torre
-    int rainha_passos = 8;  // Movimentos da Rainha
+    int bispo_passos = 5;   // Movimentação 
+    int torre_passos = 5;   // Movimentação
+    int rainha_passos = 8;  // Movimentação
 
     // ..............................
     // Movimentação do Bispo
