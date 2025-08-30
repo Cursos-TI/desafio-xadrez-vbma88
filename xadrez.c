@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int i; // Variável loop
+    int i, j; // Variáveis loop
 
     // ..............................
     // Definir variável passos 
@@ -9,12 +9,12 @@ int main() {
     int bispo_passos = 5;   // Movimentação 
     int torre_passos = 5;   // Movimentação
     int rainha_passos = 8;  // Movimentação
+    int cavalo_horizontal = 2; // Movimentação (horizontal)
+    int cavalo_vertical = 1;   // Movimentação (vertical)
 
     // ..............................
     // Movimentação do Bispo
     // ..............................
-    // O Bispo anda na diagonal superior direita:
-    // ou seja, 1 passo para "Cima" + 1 passo para "Direita" em cada repetição.
     printf("- Movimento do Bispo: -\n");
     for (i = 0; i < bispo_passos; i++) {
         printf(".........\n");
@@ -28,8 +28,6 @@ int main() {
     // ..............................
     // Movimentação da Torre
     // ..............................
-    // A Torre anda em linha reta. Aqui: 5 casas para a direita.
-    // Exemplo de uso do laço WHILE.
     printf("- Movimento da Torre: -\n");
     i = 0;
     while (i < torre_passos) {
@@ -43,9 +41,6 @@ int main() {
     // ..............................
     // Movimentação da Rainha
     // ..............................
-    // A Rainha pode andar em qualquer direção.
-    // Aqui: 8 casas para a esquerda.
-    // Exemplo de uso do laço DO-WHILE.
     printf("- Movimento da Rainha: -\n");
     i = 0;
     do {
@@ -55,6 +50,29 @@ int main() {
     } while (i < rainha_passos);
 
     printf("\n");
+
+    // ..............................
+    // Movimentação do Cavalo
+    // ..............................
+    // O Cavalo se move em L:
+    // 2 casas em uma direção (horizontal) + 1 em outra (vertical).
+    printf("- Movimento do Cavalo: -\n");
+
+    for (i = 0; i < cavalo_horizontal; i++) {
+        printf(".........\n");
+        printf("Direita\n"); // 2 passos para direita
+    }
+
+    for (j = 0; j < cavalo_vertical; j++) {
+        printf(".........\n");
+        printf("Cima\n"); // 1 passo para cima
+    }
+
+    printf("\n");
+
+    // ..............................
+    // Fim do programa
+    // ..............................
     printf("...............................\n");
     printf("- Fim da execução dos movimentos. -\n");
     printf("...............................\n");
