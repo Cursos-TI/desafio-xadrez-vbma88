@@ -77,7 +77,7 @@ int main() {
     printf("- Fim da execução dos movimentos. -\n");
     printf("...............................\n");
 
-    return 0; // Fim do programa
+    return 0;  // Fim do programa
 }
 
 // Desafio de Xadrez - MateCheck
